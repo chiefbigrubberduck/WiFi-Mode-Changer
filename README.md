@@ -1,4 +1,4 @@
-# Managed to Monitor
+## Managed to Monitor
 A set of simple scripts to change your Wi-Fi card from managed to monitor mode, vice-versa.
 
 # These scripts rely on these packages:
