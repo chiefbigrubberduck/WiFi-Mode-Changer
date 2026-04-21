@@ -1,13 +1,13 @@
-## Managed to Monitor
+# Managed to Monitor
 A set of simple scripts to change your Wi-Fi card from managed to monitor mode, vice-versa.
 
-# These scripts rely on these packages:
+## The following scripts rely on these packages:
 1. aircrack-ng suite, CLI
 2. ifconfig
 4. iwconfig
 5. systemctl
 
-# How-to run
+## How-to run
 1. cd into the directory you downloaded the scripts into.
 2. Then run "sudo chmod 777 MONITOR.sh" this makes the MONITOR.sh script executable
 3. Next run "sudo chmod 777 MANAGED.sh" this also makes the script executable
