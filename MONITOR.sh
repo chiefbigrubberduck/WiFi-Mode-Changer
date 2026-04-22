@@ -1,7 +1,10 @@
 #!/bin/bash
 
-INTERFACE="your wifi adapter"
-INTERFACEMON="your wifi adapter plus mon"
+# --- AUTO-DETECTION BLOCK START ---
+INTERFACE=$(iw dev 2>/dev/null | awk '$1=="Interface"{print $2}' | head -n1)
+INTERFACEMON="${INTERFACE}mon"
+if [ -z "$INTERFACE" ]; then echo "Error: No wireless interface found."; exit 1; fi
+# --- AUTO-DETECTION BLOCK END ---
 
 sudo airmon-ng
 sudo rfkill unblock 1
