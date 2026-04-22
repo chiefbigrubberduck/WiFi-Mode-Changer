@@ -1,7 +1,7 @@
 #!/bin/bash
 
-$INTERFACE="your wifi adapter"
-$INTERFACEMON"your wifi adapter plus mon"
+INTERFACE="your wifi adapter"
+INTERFACEMON="your wifi adapter plus mon"
 
 sudo ifconfig $INTERFACEMON down
 sudo airmon-ng stop $INTERFACEMON
