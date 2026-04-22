@@ -1,10 +1,18 @@
 #!/bin/bash
 
-# --- AUTO-DETECTION BLOCK START ---
-INTERFACE=$(iw dev 2>/dev/null | awk '$1=="Interface"{print $2}' | head -n1)
+# --- AGGRESSIVE AUTO-DETECTION ---
+INTERFACE=$(ls /sys/class/net/ | while read iface; do
+    if [ -d "/sys/class/net/$iface/device/ieee80211" ]; then
+        echo "$iface"
+        break
+    fi
+done)
 INTERFACEMON="${INTERFACE}mon"
-if [ -z "$INTERFACE" ]; then echo "Error: No wireless interface found."; exit 1; fi
-# --- AUTO-DETECTION BLOCK END ---
+
+if [ -z "$INTERFACE" ]; then
+    echo "Error: No wireless interface found."
+    exit 1
+fi
 
 sudo ifconfig $INTERFACEMON down
 sudo airmon-ng stop $INTERFACEMON
