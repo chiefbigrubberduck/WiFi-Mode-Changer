@@ -2,7 +2,7 @@
 A set of simple scripts to change your Wi-Fi card from managed to monitor mode, vice-versa.
 
 # Notes
-1. You will have to go into the script and edit the $INTERFACE and $INTERFACEMON variables, with your wifi interface name and then your wifi interface name with mon. Example would be: $INTERFACE="wlan0" and $INTERFACEMON="wlan0mon"
+1. You will have to go into the scripts and edit the $INTERFACE and $INTERFACEMON variables, with your wifi interface name and then your wifi interface name with mon. Example would be: $INTERFACE="wlan0" and $INTERFACEMON="wlan0mon"
 2. Report any issues in the wiki
 
 ## The following scripts rely on these packages:
