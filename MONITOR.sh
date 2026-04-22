@@ -1,15 +1,18 @@
 #!/bin/bash
 
-# Aggressive detection: Look at ALL net interfaces, filter for wireless drivers
+# --- AGGRESSIVE AUTO-DETECTION ---
 INTERFACE=$(ls /sys/class/net/ | while read iface; do
-    # Check if the device has a wireless driver (phy)
     if [ -d "/sys/class/net/$iface/device/ieee80211" ]; then
         echo "$iface"
         break
     fi
 done)
-
 INTERFACEMON="${INTERFACE}mon"
+
+if [ -z "$INTERFACE" ]; then
+    echo "Error: No wireless interface found."
+    exit 1
+fi
 
 sudo ifconfig $INTERFACE down
 sudo airmon-ng
