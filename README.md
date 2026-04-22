@@ -2,7 +2,7 @@
 A set of simple scripts to change your Wi-Fi card from managed to monitor mode, vice-versa.
 
 # Notes
-1. You will have to go into the scripts and edit the $INTERFACE and $INTERFACEMON variables, with your wifi interface name and then your wifi interface name with mon. Example would be: $INTERFACE="wlan0" and $INTERFACEMON="wlan0mon"
+1. You will have to go into the scripts and edit the '$INTERFACE' and '$INTERFACEMON' variables, with your wifi interface name and then your wifi interface name with mon. Example would be: '$INTERFACE="wlan0"' and '$INTERFACEMON="wlan0mon"'
 2. Report any issues in the wiki
 
 ## The following scripts rely on these packages:
@@ -13,9 +13,9 @@ A set of simple scripts to change your Wi-Fi card from managed to monitor mode, 
 
 ## How-to run
 1. cd into the directory you downloaded the scripts into.
-2. Then run "sudo chmod 777 MONITOR.sh" this makes the MONITOR.sh script executable
-3. Next run "sudo chmod 777 MANAGED.sh" this also makes the script executable
-4. After that you can execute them by running "sudo ./(MANAGED OR MONITOR).sh"
+2. Then run 'sudo chmod 777 MONITOR.sh' this makes the MONITOR.sh script executable
+3. Next run 'sudo chmod 777 MANAGED.sh' this also makes the script executable
+4. After that you can execute them by running 'sudo ./(MANAGED OR MONITOR).sh'
 5. It will ask for your password because the script requires sudo permissions
 
 # Disclaimer:
