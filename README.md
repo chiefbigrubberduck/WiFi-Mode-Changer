@@ -9,12 +9,15 @@ A set of simple scripts to change your Wi-Fi card from managed to monitor mode, 
 4. iwconfig
 5. systemctl
 
+## Installation
+Simply download the script bundle you want (simple or user-friendly) from the releases page and follow the how-to run instructions, and the instructions to edit the simple script, if you chose to download that.
+
 ## How-to edit simple script and add necessary info
 1. Open the script and look in the first 1-5 lines.
 2. You will see 2 variables called INTERFACE and INTERFACEMON.
-3. Find the name of your wifi adapter, then enter it in the INTERFACE variable in the quotes. Example: 'INTERFACE="wlp4s60"'
-4. Next you will have to edit the INTERFACEMON variable, to do so, go into the quotes and type in your wifi adapter name, adding on the "mon" abbreviation, an example would be: 'INTERFACEMON="wlp4s60mon"'
-5. After that save the changes to the document and follow the execution commands below.
+3. Find the name of your wifi adapter, then enter it in the INTERFACE variable in the quotes. Example: `INTERFACE="wlp4s60"`
+4. Next you will have to edit the INTERFACEMON variable, to do so, go into the quotes and type in your wifi adapter name, adding on the "mon" abbreviation, an example would be: `INTERFACEMON="wlp4s60mon"`
+5. After that save the changes to the document and follow the how-to run commands below.
 
 ## How-to run
 1. cd into the directory you downloaded the scripts into.
