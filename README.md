@@ -10,7 +10,7 @@ A set of simple scripts to change your Wi-Fi card from managed to monitor mode, 
 5. systemctl
 
 ## Installation
-Simply download the script bundle you want (simple or user-friendly) from the releases page and follow the how-to run instructions, and the instructions to edit the simple script, if you chose to download that.
+Simply download the script bundle you want (simple or user-friendly) from the releases page. Then decompress and extract the scripts from the .tar archive, and then follow the how-to run instructions, and the instructions to edit the simple script, if you chose to download that.
 
 ## How-to edit simple script and add necessary info
 1. Open the script and look in the first 1-5 lines.
