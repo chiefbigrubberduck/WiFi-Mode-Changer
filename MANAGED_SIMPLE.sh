@@ -8,6 +8,7 @@ sudo airmon-ng stop $INTERFACEMON
 sudo iwconfig $INTERFACE mode managed
 sudo ifconfig $INTERFACE up
 sudo systemctl start NetworkManager
+sudo ifconfig $INTERFACE down
 
 echo "                                               "
 
